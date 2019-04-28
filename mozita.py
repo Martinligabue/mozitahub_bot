@@ -136,7 +136,6 @@ def risposte(msg):
         bot.sendMessage(chat_id, "Errore: comando non riconosciuto", reply_markup=start)
 
 
-
 bot=telepot.Bot(TOKEN)
 MessageLoop(bot, {'chat': risposte, 'callback_query': risposte}).run_as_thread()
 
